@@ -1,0 +1,196 @@
+/* ********************************************/
+/* below 950px : for  tablets*/
+/* ********************************************/
+@media screen and (max-width: 61em) {
+  html {
+    /* Set the base font size */
+    font-size: 55.5%;
+  }
+
+  h1 {
+    font-size: 6.2rem;
+    line-height: 6.2rem;
+    letter-spacing: 1.2px;
+  }
+
+  .nav {
+    position: relative;
+  }
+
+  .nav__menu-icon {
+    padding: 1.2rem;
+
+    display: block;
+
+    font-size: 3.2rem;
+
+    border-radius: 100rem;
+
+    background-color: var(--white);
+    color: #333;
+
+    transition: all 0.8s cubic-bezier(0.85, 0, 0.15, 1);
+  }
+
+  .nav__menu {
+    position: absolute;
+
+    padding: 3.2rem;
+
+    flex-direction: column;
+
+    /* top: 275%; */
+    top: -200%;
+    left: 50%;
+
+    width: 100%;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 2rem;
+
+    background-color: var(--heading);
+
+    transition: all 0.8s cubic-bezier(0.85, 0, 0.15, 1);
+  }
+
+  .background-moving-shapes {
+    max-width: 70rem;
+  }
+
+  .hero__content {
+    padding: 8rem 0 12.8rem;
+  }
+
+  .programs-section .grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 6.4rem;
+  }
+
+  .lessons-section .container.grid {
+    grid-template-columns: 1fr;
+    row-gap: 6.4rem;
+    text-align: center;
+  }
+  .lessons-section .btn {
+    margin: 0 auto;
+  }
+
+  .numbers-section .grid {
+    align-items: start;
+  }
+
+  .numbers-card {
+    padding: 0;
+  }
+
+  .numbers-card__number {
+    font-size: 6.4rem;
+  }
+
+  .numbers-card__iocn-container {
+    margin-top: -10%;
+  }
+
+  .testimonials-section .grid {
+    grid-template-columns: repeat(2, 1.5fr);
+  }
+
+  .testimonial-card:last-child {
+    grid-column: 1/-1;
+  }
+}
+/* ********************************************/
+/* below 775 : for small tablets and landscape mobile*/
+/* ********************************************/
+@media screen and (max-width: 48em) {
+  .hero.grid {
+    grid-template-columns: 1fr;
+  }
+  .hero__content {
+    padding: 4.8rem 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .programs-section .grid {
+    grid-template-columns: 1fr;
+  }
+  .program-card__img-container {
+    aspect-ratio: 2 / 1;
+    object-fit: cover;
+  }
+  .program-card__img {
+    width: 100%;
+    height: auto;
+  }
+
+  .lessons-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .lessons-car:last-child {
+    grid-column: 1/-1;
+  }
+
+  .numbers-section .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6.4rem;
+  }
+  .numbers-card__iocn-container {
+    margin-top: -5%;
+  }
+
+  .testimonials-section .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid--footer {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    row-gap: 8rem;
+  }
+  .details--column {
+    grid-row-gap: 1.2em;
+  }
+}
+/* ********************************************/
+/* below 550px : for mobile*/
+/* ********************************************/
+@media screen and (max-width: 30em) {
+  h2 {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hero__content {
+    padding: 4.8rem 0;
+  }
+
+  .performance-section {
+    padding: 4.8rem 3.2rem;
+    padding-top: 6.4rem;
+  }
+  .performance-section__container {
+    margin-bottom: -15%;
+  }
+
+  .newsletter--form {
+    margin: 0;
+    flex-direction: column;
+    background-color: transparent;
+    max-width: 100%;
+  }
+  .newsletter--form * {
+    max-width: 100%;
+    width: 100% !important;
+  }
+
+  .newsletter--form .btn {
+    justify-content: center;
+  }
+}
